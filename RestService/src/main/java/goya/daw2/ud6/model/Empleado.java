@@ -53,9 +53,9 @@ public class Empleado {
 	      return true;
 	    if (!(o instanceof Empleado))
 	      return false;
-	    Empleado employee = (Empleado) o;
-	    return Objects.equals(this.id, employee.id) && Objects.equals(this.name, employee.name)
-	        && Objects.equals(this.role, employee.role);
+	    Empleado empleado = (Empleado) o;
+	    return Objects.equals(this.id, empleado.id) && Objects.equals(this.name, empleado.name)
+	        && Objects.equals(this.role, empleado.role);
 	  }
 
 	  @Override
