@@ -10,41 +10,41 @@ import jakarta.persistence.Id;
 @Entity
 public class Empleado {
 	 	@Id
-	  @GeneratedValue(strategy=GenerationType.AUTO) 
+	  @GeneratedValue(strategy=GenerationType.IDENTITY) 
 	  private Long id;
-	  private String name;
-	  private String role;
+	  private String nombre;
+	  private String rol;
 
 	  public Empleado() {}
 
-	  public Empleado(String name, String role) {
+	  public Empleado(String nombre, String rol) {
 
-	    this.name = name;
-	    this.role = role;
+	    this.nombre = nombre;
+	    this.rol = rol;
 	  }
 
 	  public Long getId() {
 	    return this.id;
 	  }
 
-	  public String getName() {
-	    return this.name;
+	  public String getNombre() {
+	    return this.nombre;
 	  }
 
-	  public String getRole() {
-	    return this.role;
+	  public String getRol() {
+	    return this.rol;
 	  }
 
 	  public void setId(Long id) {
 	    this.id = id;
 	  }
 
-	  public void setName(String name) {
-	    this.name = name;
+	  public void setNombre(String nombre) {
+	    this.nombre = nombre;
 	  }
 
-	  public void setRole(String role) {
-	    this.role = role;
+	  public void setRol(String rol) {
+	    this.rol = rol;
 	  }
 
 	  @Override
@@ -55,17 +55,17 @@ public class Empleado {
 	    if (!(o instanceof Empleado))
 	      return false;
 	    Empleado empleado = (Empleado) o;
-	    return Objects.equals(this.id, empleado.id) && Objects.equals(this.name, empleado.name)
-	        && Objects.equals(this.role, empleado.role);
+	    return Objects.equals(this.id, empleado.id) && Objects.equals(this.nombre, empleado.nombre)
+	        && Objects.equals(this.rol, empleado.rol);
 	  }
 
 	  @Override
 	  public int hashCode() {
-	    return Objects.hash(this.id, this.name, this.role);
+	    return Objects.hash(this.id, this.nombre, this.rol);
 	  }
 
 	  @Override
 	  public String toString() {
-	    return "Employee{" + "id=" + this.id + ", name='" + this.name + '\'' + ", role='" + this.role + '\'' + '}';
+	    return "Employee{" + "id=" + this.id + ", nombre='" + this.nombre + '\'' + ", role='" + this.rol + '\'' + '}';
 	  }
 }
