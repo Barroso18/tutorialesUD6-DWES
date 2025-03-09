@@ -1,0 +1,58 @@
+{
+  "peliculas": [
+    {
+      "id": "1",
+      "nombre": "El sexto sentido",
+      "director": "M. Night Shyamalan",
+      "clasificacion": "Drama"
+    },
+    {
+      "id": "2",
+      "nombre": "Pulp Fiction",
+      "director": "Tarantino",
+      "clasificacion": "Acción"
+    },
+    {
+      "id": "3",
+      "nombre": "300",
+      "director": "Zack Snyder",
+      "clasificacion": "Acción"
+    },
+    {
+      "id": "4",
+      "nombre": "300",
+      "director": "Zack Snyder",
+      "clasificacion": "Acción"
+    },
+    {
+      "id": "5",
+      "nombre": "El silencio de los corderos2",
+      "director": "Jonathan Demme",
+      "clasificacion": "Drama"
+    },
+    {
+      "id": "7",
+      "nombre": "Las Hurdes2",
+      "director": "Luis Buñuel",
+      "clasificacion": "Documental"
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Drama",
+      "id": "1"
+    },
+    {
+      "nombre": "Comedia",
+      "id": "2"
+    },
+    {
+      "nombre": "Documental",
+      "id": "3"
+    },
+    {
+      "nombre": "Acción",
+      "id": "4"
+    }
+  ]
+}

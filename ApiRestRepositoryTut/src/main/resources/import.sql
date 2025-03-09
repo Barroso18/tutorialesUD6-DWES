@@ -1,0 +1,7 @@
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("El sexto sentido","M. Night Shyamalan","Drama")
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("Pulp Fiction","Tarantino","Acción")
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("Todo Sobre Mi Madre","Almodobar","Drama")
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("300","Zack Snyder","Acción")
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("El silencio de los corderos","Jonathan Demme","Drama")
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("Forrest Gump","Robert Zemeckis","Comedia")
+INSERT INTO pelicula(nombre,director,clasificacion) VALUES ("Las Hurdes","Luis Buñuel","Documental")
