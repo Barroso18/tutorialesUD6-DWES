@@ -8,11 +8,16 @@ import jakarta.persistence.Id;
 @Entity
 public class Pelicula {
 	@Id
-	  @GeneratedValue(strategy = GenerationType.AUTO)
+	  @GeneratedValue(strategy = GenerationType.IDENTITY)
 	  private long id;
 	 private String nombre;
 	  private String director;
-	  private Clasificacion clasificacion;
+	  private String clasificacion;
+	  /*public Pelicula(String nombre, String director,String clasificacion) {
+		  this.nombre = nombre;
+		  this.director = director;
+		  this.clasificacion = new Clasificacion(clasificacion);
+	  }*/
 	public long getId() {
 		return id;
 	}
@@ -31,10 +36,16 @@ public class Pelicula {
 	public void setDirector(String director) {
 		this.director = director;
 	}
-	public Clasificacion getClasificacion() {
+	/*public Clasificacion getClasificacion() {
 		return clasificacion;
 	}
 	public void setClasificacion(Clasificacion clasificacion) {
+		this.clasificacion = clasificacion;
+	}*/
+	public String getClasificacion() {
+		return clasificacion;
+	}
+	public void setClasificacion(String clasificacion) {
 		this.clasificacion = clasificacion;
 	}
 	

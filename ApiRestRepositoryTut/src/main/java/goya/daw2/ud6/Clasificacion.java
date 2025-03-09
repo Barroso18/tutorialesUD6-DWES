@@ -9,6 +9,9 @@ public class Clasificacion {
 	  @GeneratedValue(strategy = GenerationType.AUTO)
 	  private long id;
 	 private String nombre;
+	 public Clasificacion(String nombre) {
+		 this.nombre = nombre;
+	 }
 	public long getId() {
 		return id;
 	}
