@@ -35,6 +35,18 @@
       "nombre": "Las Hurdes2",
       "director": "Luis Buñuel",
       "clasificacion": "Documental"
+    },
+    {
+      "id": 9,
+      "nombre": "Avengers: Infinity War",
+      "director": "Anthony Russo",
+      "clasificacion": "Acción"
+    },
+    {
+      "id": 9,
+      "nombre": "Avengers: Infinity War",
+      "director": "Anthony Russo",
+      "clasificacion": "Acción"
     }
   ],
   "clasificaciones": [
