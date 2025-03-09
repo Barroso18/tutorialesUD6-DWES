@@ -15,8 +15,8 @@ public class CargaBaseDeDatos {
   CommandLineRunner initDatabase(RepositorioPelicula repositorio) {
 
     return args -> {
-      log.info("Preloading " + repositorio.save(new Pelicula("El sexto sentido","M. Night Shyamalan","Drama")));
-      log.info("Preloading " + repositorio.save(new Pelicula("Pulp Fiction","Tarantino","Acción")));
+     /* log.info("Preloading " + repositorio.save(new Pelicula("El sexto sentido","M. Night Shyamalan","Drama")));
+      log.info("Preloading " + repositorio.save(new Pelicula("Pulp Fiction","Tarantino","Acción")));*/
     };
   }
 }
