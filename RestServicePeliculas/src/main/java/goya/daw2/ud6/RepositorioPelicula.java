@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RepositorioPelicula extends JpaRepository<Pelicula,Long>{
-	List<Pelicula> findByNombre(@Param("nombre") String nombre);
+	Optional<Pelicula> findByNombre(@Param("nombre") String nombre);
 	public Optional<Pelicula> findById(Long id);
 }
