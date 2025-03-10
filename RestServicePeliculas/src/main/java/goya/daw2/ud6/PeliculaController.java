@@ -26,7 +26,7 @@ public class PeliculaController {
 	/*List<Pelicula> all() {
 	    return repositorio.findAll();
 	}*/
-	@GetMapping("/")
+	@GetMapping("")
 	public ResponseEntity<Iterable<Pelicula>> getAllPeliculas() {
         return ResponseEntity.ok(repositorio.findAll());
     }
@@ -38,7 +38,7 @@ public class PeliculaController {
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
 	
-	@PostMapping("/")
+	@PostMapping("")
     public ResponseEntity<?> createPelicula(@RequestBody Pelicula pelicula) {
         
         if (repositorio.findByNombre(pelicula.getNombre()).isPresent()) {
@@ -54,6 +54,9 @@ public class PeliculaController {
 		if (!id.equals(pelicula.getId())) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("CONFLICTO DE IDs");
         }
+		if(repositorio.findById(id).isEmpty()) {
+			return  ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		}
 		// Verifica si el nombre ya existe en otro personaje
         if (repositorio.findByNombre(pelicula.getNombre()).isPresent() && 
         		!id.equals(repositorio.findByNombre(pelicula.getNombre()).get().getId())) {
